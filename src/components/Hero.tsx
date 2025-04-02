@@ -1,4 +1,3 @@
-import React from "react";
 import portrait from "../assets/portrait.jpg";
 import { HERO_CONTENT } from "../constants/utils";
 // montserratAlt;
