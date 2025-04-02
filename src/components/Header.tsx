@@ -25,7 +25,7 @@ function Header() {
         ease: "easeOut",
         delay: 0.2,
       }}
-      className="flex flex-row items-center justify-between w-full"
+      className="flex flex-row items-center justify-between w-full "
     >
       <a href="/" aria-label="home">
         <img src={myLogo} alt="mySvgImage" className="w-12 h-12" />

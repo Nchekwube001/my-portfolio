@@ -26,7 +26,7 @@ function Projects() {
       </h2>
       <div>
         {PROJECTS.map(({ desc, icon, title, appUrl, playUrl }) => (
-          <div key={title} className="flex flex-wrap mb-8 lg:justify-center">
+          <div key={title} className="flex flex-wrap  mb-8 justify-center">
             <div className="w-full lg:w-1/4 justify-center items-center flex ">
               <img className="w-64 h-64 mb-6 rounded" src={icon} alt={title} />
             </div>

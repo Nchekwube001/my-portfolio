@@ -3,6 +3,9 @@ import credellex from "../assets/AppLogoWhite.svg";
 import dotHmo from "../assets/hmoLogo.svg";
 import dotMfb from "../assets/dot.svg";
 import kinnect from "../assets/kinnect.svg";
+import monkeymusic from "../assets/monkeymusic.svg";
+import worldhero from "../assets/worldhero.svg";
+import digicore from "../assets/digicore.svg";
 import tribapay from "../assets/tribapay2.svg";
 import enterprise from "../assets/enterprise.svg";
 import safepazz from "../assets/safepazz.svg";
@@ -90,5 +93,52 @@ export const PROJECTS: projectType[] = [
     desc: "Kinnect is specifically designed to foster authentic relationships. Whether you're nurturing an existing connection or seeking new ones, our platform combines expert coaching with personalized guidance to help you thrive in love and friendships. Join our supportive community, develop valuable insights, and discover what it means to truly belong.",
     icon: kinnect,
     playUrl: "https://play.google.com/store/apps/details?id=com.app.kinnect",
+  },
+  {
+    title: "WorldHero Pay",
+    desc: "Send money to over 20 countries with competitive exchange rates and low fees. Pay bills, shop online, and make in-app purchases seamlessly with our secure virtual cards. Manage multiple currencies in one convenient app. Enjoy lightning-fast transfers that typically arrive within minutes. Benefit from 24/7 customer support and robust security measures. Download WorldHero Pay today and experience the freedom of global finance.",
+    icon: worldhero,
+    playUrl:
+      "https://play.google.com/store/apps/details?id=com.worldhero.swiftpay",
+    appUrl: "https://apps.apple.com/ng/app/worldhero-pay/id6504638005",
+  },
+];
+
+export const EXPERIENCES = [
+  {
+    year: "2024 - Present",
+    role: "Senior Mobile Engineer",
+    company: "Dotlabs",
+    icon: dotMfb,
+  },
+  {
+    year: "2024 - 2025",
+    role: "Senior Mobile Engineer",
+    company: "World Hero",
+    icon: worldhero,
+  },
+  {
+    year: "2024 - 2025",
+    role: "Senior Mobile Engineer",
+    company: "Credellex",
+    icon: credellex,
+  },
+  {
+    year: "2023 - 2024",
+    role: "Senior Mobile Engineer",
+    company: "Tribapay",
+    icon: tribapay,
+  },
+  {
+    year: "2021 - 2024",
+    role: "Mobile Engineer",
+    company: "Digicore",
+    icon: digicore,
+  },
+  {
+    year: "2021 - 2024",
+    role: "Software Engineer",
+    company: "Monkey Music",
+    icon: monkeymusic,
   },
 ];

@@ -1,3 +1,4 @@
+import Experiences from "./components/Experiences";
 import Header from "./components/Header";
 import Hero from "./components/Hero";
 import Projects from "./components/Projects";
@@ -10,6 +11,7 @@ function App() {
       <Hero />
       <Technologies />
       <Projects />
+      <Experiences />
       {/* <div className="flex flex-row">
         <PhotoBox />
         <div className="pl-10">

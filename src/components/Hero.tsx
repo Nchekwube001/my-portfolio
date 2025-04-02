@@ -4,9 +4,40 @@ import { motion } from "motion/react";
 
 // montserratAlt;
 // lg: p - 8;
+
+const containerVariants = {
+  hidden: {
+    opacity: 0,
+    x: -100,
+  },
+  visible: {
+    opacity: 1,
+    x: 0,
+    transition: {
+      duration: 0.5,
+      ease: "easeOut",
+      staggerChidlren: 0.5,
+    },
+  },
+};
+const childVariants = {
+  hidden: {
+    opacity: 0,
+    x: -100,
+  },
+  visible: {
+    opacity: 1,
+    x: 0,
+    transition: {
+      duration: 0.5,
+      ease: "easeOut",
+    },
+  },
+};
+
 function Hero() {
   return (
-    <div className="pb-4 lg:mb-36 mt-8">
+    <div className="pb-4 lg:mb-36 mt-8 sticky">
       <div className="flex flex-wrap lg:flex-row-reverse">
         <motion.div
           className="w-full lg:w-1/2"
