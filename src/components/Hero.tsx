@@ -5,35 +5,35 @@ import { motion } from "motion/react";
 // montserratAlt;
 // lg: p - 8;
 
-const containerVariants = {
-  hidden: {
-    opacity: 0,
-    x: -100,
-  },
-  visible: {
-    opacity: 1,
-    x: 0,
-    transition: {
-      duration: 0.5,
-      ease: "easeOut",
-      staggerChidlren: 0.5,
-    },
-  },
-};
-const childVariants = {
-  hidden: {
-    opacity: 0,
-    x: -100,
-  },
-  visible: {
-    opacity: 1,
-    x: 0,
-    transition: {
-      duration: 0.5,
-      ease: "easeOut",
-    },
-  },
-};
+// const containerVariants = {
+//   hidden: {
+//     opacity: 0,
+//     x: -100,
+//   },
+//   visible: {
+//     opacity: 1,
+//     x: 0,
+//     transition: {
+//       duration: 0.5,
+//       ease: "easeOut",
+//       staggerChidlren: 0.5,
+//     },
+//   },
+// };
+// const childVariants = {
+//   hidden: {
+//     opacity: 0,
+//     x: -100,
+//   },
+//   visible: {
+//     opacity: 1,
+//     x: 0,
+//     transition: {
+//       duration: 0.5,
+//       ease: "easeOut",
+//     },
+//   },
+// };
 
 function Hero() {
   return (
