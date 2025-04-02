@@ -1,12 +1,29 @@
 import portrait from "../assets/portrait.jpg";
 import { HERO_CONTENT } from "../constants/utils";
+import { motion } from "motion/react";
+
 // montserratAlt;
 // lg: p - 8;
 function Hero() {
   return (
     <div className="pb-4 lg:mb-36 mt-8">
       <div className="flex flex-wrap lg:flex-row-reverse">
-        <div className="w-full lg:w-1/2">
+        <motion.div
+          className="w-full lg:w-1/2"
+          initial={{
+            opacity: 0,
+            x: 400,
+          }}
+          animate={{
+            opacity: 1,
+            x: 0,
+          }}
+          transition={{
+            duration: 1,
+            ease: "easeOut",
+            delay: 0.2,
+          }}
+        >
           <div className="flex justify-center  ">
             <img
               src={portrait}
@@ -15,8 +32,23 @@ function Hero() {
               // className="w-48 h-64 object-cover rounded-xl"
             />
           </div>
-        </div>
-        <div className="w-full lg:w-1/2">
+        </motion.div>
+        <motion.div
+          className="w-full lg:w-1/2"
+          initial={{
+            opacity: 0,
+            x: -400,
+          }}
+          animate={{
+            opacity: 1,
+            x: 0,
+          }}
+          transition={{
+            duration: 1,
+            ease: "easeOut",
+            delay: 0.2,
+          }}
+        >
           <div className="flex flex-col items-center lg:items-start mt-10">
             <h2 className="font-rubikMono pb-2 text-3xl tracking-tighter md:text-5xl lg:text-7xl text-white">
               Unekwe Francis
@@ -38,7 +70,7 @@ function Hero() {
               Download Resume
             </a>
           </div>
-        </div>
+        </motion.div>
       </div>
     </div>
   );

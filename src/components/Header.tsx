@@ -2,7 +2,12 @@ import { IconContext } from "react-icons";
 import myLogo from "../assets/myLogo.svg";
 import { FaLinkedin, FaGithubSquare } from "react-icons/fa";
 import { FaSquareXTwitter } from "react-icons/fa6";
+
 import { motion } from "motion/react";
+import { TbMessage2Filled } from "react-icons/tb";
+
+import { myEmail } from "../constants/utils";
+const href = `mailto:${myEmail}`;
 
 function Header() {
   return (
@@ -52,6 +57,11 @@ function Header() {
         >
           <IconContext.Provider value={{ color: "white", size: "32px" }}>
             <FaSquareXTwitter />
+          </IconContext.Provider>
+        </a>
+        <a href={href} target="_blank" aria-label="twitter">
+          <IconContext.Provider value={{ color: "white", size: "32px" }}>
+            <TbMessage2Filled />
           </IconContext.Provider>
         </a>
       </div>
