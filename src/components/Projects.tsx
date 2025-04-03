@@ -21,14 +21,18 @@ import { FaAppStoreIos } from "react-icons/fa";
 function Projects() {
   return (
     <div className="pb-4">
-      <h2 className="my-20 text-center text-4xl font-rubikMono text-white">
+      <h2 className="my-20 text-center text-3xl lg:text-4xl font-rubikMono text-white">
         Projects
       </h2>
       <div>
         {PROJECTS.map(({ desc, icon, title, appUrl, playUrl }) => (
           <div key={title} className="flex flex-wrap  mb-8 justify-center">
             <div className="w-full lg:w-1/4 justify-center items-center flex ">
-              <img className="w-64 h-64 mb-6 rounded" src={icon} alt={title} />
+              <img
+                className="w-40 lg:w-64 h-40 lg:h-64 mb-6 rounded"
+                src={icon}
+                alt={title}
+              />
             </div>
             <div className="w-full max-w-xl lg:w-3/4 lg:pl-8 justify-center items-center lg:items-start flex flex-col">
               <h3 className="font-rubikMono text-2xl mb-2 text-white">
