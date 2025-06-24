@@ -35,7 +35,7 @@ export const technologyList = [
   },
 ];
 export const HERO_CONTENT =
-  "I'm a Proficient software developer, with great experience in developing pixel-perfect mobile and web applications.  Led various frontend engineering roles with extensive experience in building and maintaining complex frontend systems and building user-friendly interfaces leveraging deep understanding of design and engineering.";
+  "Senior Mobile Engineer with 6+ years of experience delivering cross-platform applications across fintech, health, and e-commerce. Proven ability to lead and scale mobile solutions — from architecture to production — with over 12 apps live on iOS and Android, some surpassing 1M+ users. Expert in Flutter, Kotlin, Jetpack Compose, and React Native (Expo), with a strong eye for clean UI, performance, and end-user experience. Adept at collaborating with designers, backend teams, and stakeholders to deliver high-quality, user-driven mobile solutions.";
 
 interface projectType {
   title: string;
