@@ -85,7 +85,7 @@ function Hero() {
               Unekwe Francis
             </h2>
             <span className="font-montserratAlt bg-gradient-to-r from-stone-100 to-stone-400 bg-clip-text text-2xl tracking-tight text-transparent">
-              Software Developer
+              Senior Software Developer
             </span>
 
             <p className="font-montserratAlt text-left text-white my-2 max-w-lg py-6 text-xl leading-relaxed tracking-tighter">
