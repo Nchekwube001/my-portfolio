@@ -20,6 +20,7 @@ import safepazzIcon from "../assets/safepazz.png";
 import kinnectIcon from "../assets/kinnect.png";
 import advantageIcon from "../assets/advantage.png";
 import leetaIcon from "../assets/leeta.png";
+import grampetsIcon from "../assets/grampets.png";
 export type ProjectSector =
   | "Money"
   | "Health"
@@ -54,6 +55,14 @@ export const PROJECTS: projectType[] = [
     appUrl: "https://apps.apple.com/us/app/leeta/id6755038826",
     playUrl:
       "https://play.google.com/store/apps/details?id=com.leetatech.customer",
+  },
+  {
+    title: "Grampets",
+    desc: "A social network for pet lovers, with pet profiles, feeds, chat, forums, adoption listings, and a marketplace.",
+    icon: grampetsIcon,
+    sector: "Community",
+    appUrl: "https://apps.apple.com/ng/app/grampets-pets-social-network/id6751918721",
+    playUrl: "https://play.google.com/store/apps/details?id=com.grampets.android",
   },
   {
     title: "Atlas Remit",
