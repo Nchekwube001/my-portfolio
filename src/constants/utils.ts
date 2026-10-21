@@ -21,6 +21,7 @@ import kinnectIcon from "../assets/kinnect.png";
 import advantageIcon from "../assets/advantage.png";
 import leetaIcon from "../assets/leeta.png";
 import grampetsIcon from "../assets/grampets.png";
+import cirrdenIcon from "../assets/cirrden.png";
 export type ProjectSector =
   | "Money"
   | "Health"
@@ -63,6 +64,14 @@ export const PROJECTS: projectType[] = [
     sector: "Community",
     appUrl: "https://apps.apple.com/ng/app/grampets-pets-social-network/id6751918721",
     playUrl: "https://play.google.com/store/apps/details?id=com.grampets.android",
+  },
+  {
+    title: "Cirrden",
+    desc: "A video-first platform where African creators share content, grow communities, and earn through subscriptions, bundles, and paid Circles.",
+    icon: cirrdenIcon,
+    sector: "Community",
+    appUrl: "https://apps.apple.com/app/cirrden/id6761685356",
+    playUrl: "https://play.google.com/store/apps/details?id=com.app.cirrden",
   },
   {
     title: "Atlas Remit",
