@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useSyncExternalStore } from "react";
 import {
   EXPERIENCES,
   myEmail,
@@ -27,10 +27,36 @@ const projectFilters: Array<"All work" | ProjectSector> = [
   "Community",
 ];
 
+type Appearance = "light" | "dark";
+
+const darkAppearanceQuery = "(prefers-color-scheme: dark)";
+
+function subscribeToSystemAppearance(onChange: () => void) {
+  const mediaQuery = window.matchMedia(darkAppearanceQuery);
+  mediaQuery.addEventListener("change", onChange);
+
+  return () => mediaQuery.removeEventListener("change", onChange);
+}
+
+function getSystemAppearance(): Appearance {
+  return window.matchMedia(darkAppearanceQuery).matches ? "dark" : "light";
+}
+
+function getServerAppearance(): Appearance {
+  return "light";
+}
+
 function App() {
   const [activeFilter, setActiveFilter] =
     useState<(typeof projectFilters)[number]>("All work");
-  const [appearance, setAppearance] = useState<"light" | "dark">("light");
+  const systemAppearance = useSyncExternalStore(
+    subscribeToSystemAppearance,
+    getSystemAppearance,
+    getServerAppearance,
+  );
+  const [appearanceOverride, setAppearanceOverride] =
+    useState<Appearance | null>(null);
+  const appearance = appearanceOverride ?? systemAppearance;
   const visibleProjects =
     activeFilter === "All work"
       ? PROJECTS
@@ -55,7 +81,7 @@ function App() {
           className="appearance-button"
           type="button"
           onClick={() =>
-            setAppearance(appearance === "light" ? "dark" : "light")
+            setAppearanceOverride(appearance === "light" ? "dark" : "light")
           }
           aria-label={`Switch to ${appearance === "light" ? "dark" : "light"} appearance`}
         >
