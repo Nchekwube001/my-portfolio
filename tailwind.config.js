@@ -3,13 +3,15 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        dmSans: ["DM Sans", "sans-serif"],
-        montserratAlt: ["Montserrat Alternates", "sans-serif"],
-        rubikMono: ["Rubik Mono One", "monospace"],
+        sans: ["Inter", "sans-serif"],
+        display: ["Space Grotesk", "sans-serif"],
+        mono: ["IBM Plex Mono", "monospace"],
       },
       colors: {
-        main: "#FAFAF2",
-        mainDark: "#191819",
+        paper: "#f3f0e8",
+        ink: "#20221d",
+        accent: "#e65e3d",
+        muted: "#686960",
       },
     },
   },
