@@ -115,9 +115,9 @@ function App() {
                   <strong>Unekwe Francis</strong>
                   <span>Engineer · Builder</span>
                 </figcaption>
-                <span className="portrait-card-mark" aria-hidden="true">
+                {/* <span className="portrait-card-mark" aria-hidden="true">
                   UF
-                </span>
+                </span> */}
               </figure>
               <p className="product-board-caption">
                 A few products I’ve helped bring to life.
