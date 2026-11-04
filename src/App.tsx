@@ -178,7 +178,7 @@ function App() {
               ({ title, desc, icon, appUrl, playUrl, sector }) => (
                 <article
                   className={
-                    title === "DOT Business"
+                    title === "Dot Business"
                       ? "project-card project-card-featured"
                       : "project-card"
                   }
@@ -194,7 +194,7 @@ function App() {
                       />
                     </div>
                     <span className="sector-tag">{sector}</span>
-                    {title === "DOT Business" && (
+                    {title === "Dot Business" && (
                       <span className="featured-tag">Featured work</span>
                     )}
                   </div>

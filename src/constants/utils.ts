@@ -41,7 +41,7 @@ interface projectType {
 }
 export const PROJECTS: projectType[] = [
   {
-    title: "DOT Business",
+    title: "Dot Business",
     desc: "A mobile banking app for businesses to manage payments and move money.",
     icon: dotBusinessIcon,
     sector: "Money",
@@ -62,8 +62,10 @@ export const PROJECTS: projectType[] = [
     desc: "A social network for pet lovers, with pet profiles, feeds, chat, forums, adoption listings, and a marketplace.",
     icon: grampetsIcon,
     sector: "Community",
-    appUrl: "https://apps.apple.com/ng/app/grampets-pets-social-network/id6751918721",
-    playUrl: "https://play.google.com/store/apps/details?id=com.grampets.android",
+    appUrl:
+      "https://apps.apple.com/ng/app/grampets-pets-social-network/id6751918721",
+    playUrl:
+      "https://play.google.com/store/apps/details?id=com.grampets.android",
   },
   {
     title: "Cirrden",
@@ -91,7 +93,7 @@ export const PROJECTS: projectType[] = [
   },
 
   {
-    title: "DOTPay",
+    title: "DotPay",
     desc: "A payments app connecting customers with agents for transfers and bill payments.",
     icon: dotPayIcon,
     sector: "Money",
